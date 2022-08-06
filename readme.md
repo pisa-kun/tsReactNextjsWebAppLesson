@@ -50,3 +50,8 @@
  }
 }
 ```
+
+#### chapter3 add react
+> npx create-react-app@latest react-sample --template typescript
+>cd react-sample
+>npm run start
