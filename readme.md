@@ -1,6 +1,6 @@
 ### typescript react/next.js webApp
 
-書籍の練習レポジトリ
+[書籍](https://gihyo.jp/book/2022/978-4-297-12916-3)の練習レポジトリ
 
 #### install procedure
 
@@ -59,3 +59,8 @@
 > npx create-next-app@latest --ts next-sample
 >cd next-sample
 >npm run start
+
+- 以下のようなエラーがでたとき
+>Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+
+ポートを使っているので、サーバーを落とす
