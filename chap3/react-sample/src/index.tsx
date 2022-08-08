@@ -8,13 +8,30 @@ import Name from './components/Name';
 import Message from "./components/Message";
 import ContainerSample from "./components/ContainerSample";
 import Page from "./components/ContenxtSample";
+// import Counter from "./components/useState";
+import Counter from "./components/useReducer";
+import Parent from "./components/Parent";
+import UseMemoSample  from './components/UseMemoSample';
+import { Clock } from './components/Clock';
+import ParentContext from './components/useComponent';
+import ImageUploader from './components/useRef';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Hello></Hello>
+    <Name></Name>
+    <Message></Message>
+    <ContainerSample></ContainerSample>
     <Page></Page>
+    <Counter initialValue={1}></Counter>
+    <Parent></Parent>
+    <UseMemoSample></UseMemoSample>
+    <Clock></Clock>
+    <ParentContext></ParentContext>
+    <ImageUploader></ImageUploader>
   </React.StrictMode>
 );
 

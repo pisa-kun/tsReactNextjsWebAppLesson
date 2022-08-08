@@ -55,3 +55,7 @@
 > npx create-react-app@latest react-sample --template typescript
 >cd react-sample
 >npm run start
+
+> npx create-next-app@latest --ts next-sample
+>cd next-sample
+>npm run start
