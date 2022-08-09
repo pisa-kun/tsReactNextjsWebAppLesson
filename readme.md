@@ -80,3 +80,13 @@ or
 ```.storybook/main.js
 "typescript" : { reactDocgen: false }, // add
 ```
+
+**Actionを追加するとき**
+stories/StyledButton.stories.tsx にプロパティを追加する
+```tsx
+export default{
+    title: 'StyledButoon',
+    component: StyledButton,
+    argTypes: {onClick: {action: 'clicked'}},
+} as ComponentMeta<typeof StyledButton>
+```
