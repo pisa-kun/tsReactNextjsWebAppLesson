@@ -90,3 +90,9 @@ export default{
     argTypes: {onClick: {action: 'clicked'}},
 } as ComponentMeta<typeof StyledButton>
 ```
+
+**Reactにおけるテスト**
+> npm install --save-dev jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom
+
+package.jsonにコマンド追加して  
+> npm run test
