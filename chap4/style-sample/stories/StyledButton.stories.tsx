@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {action} from '@storybook/addon-actions';
 
 export default{
-    title: 'StyledButoon',
+    title: 'StyledButton',
     component: StyledButton,
     //argTypes: {onClick: {action: 'clicked'}},
 } as ComponentMeta<typeof StyledButton>
