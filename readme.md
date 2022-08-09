@@ -70,6 +70,13 @@ or
 
 ポートを使っているので、サーバーを落とす
 
-#### chapter3 add styled-components
+#### chapter4 add styled-components
 > npm install --save styled-components  
 > npm install --save-dev @types/styled-components  
+
+**stroybookError**
+[参考](https://dev.classmethod.jp/articles/tried-to-add-storybook-to-nextjs-project/)
+
+```.storybook/main.js
+"typescript" : { reactDocgen: false }, // add
+```
