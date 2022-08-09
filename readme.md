@@ -52,15 +52,24 @@
 ```
 
 #### chapter3 add react
-> npx create-react-app@latest react-sample --template typescript
->cd react-sample
->npm run start
+> npx create-react-app@latest react-sample --template typescript  
+>cd react-sample  
+>npm run start  
 
-> npx create-next-app@latest --ts next-sample
->cd next-sample
->npm run start
+> npx create-next-app@latest --ts next-sample  
+>cd next-sample  
+>npm run start  
+
+or
+
+> npm run build  
+> num run start
 
 - 以下のようなエラーがでたとき
 >Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
 
 ポートを使っているので、サーバーを落とす
+
+#### chapter3 add styled-components
+> npm install --save styled-components  
+> npm install --save-dev @types/styled-components  
