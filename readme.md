@@ -95,4 +95,26 @@ export default{
 > npm install --save-dev jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom
 
 package.jsonにコマンド追加して  
-> npm run test
+> npm run test  
+
+#### chapter5 develop environment
+> npx create-next-app@latest --ts nextjs-gihyo-book  
+> cd nextjs-gihyo-book  
+> npm run dev
+
+> npm install --save styled-components  
+> npm install --save-dev @types/styled-components  
+
+**esLintの設定**
+- eslint-plugin-react@7.30.1
+- eslint-plugin-react-hooks@4.6.0
+- eslint@8.21.0
+- eslint-plugin-import@2.26.0
+- typescript-eslint@0.0.1-alpha.0
+- eslint-plugin-prettier@4.2.1
+- eslint-config-prettier@8.5.0
+- prettier@2.7.1
+- @typescript-eslint/parser@5.33.0
+- @typescript-eslint/eslint-plugin@5.33.0
+
+> npm install --save-dev prettier eslint typescript-eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import
