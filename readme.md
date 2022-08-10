@@ -118,3 +118,37 @@ package.jsonにコマンド追加して
 - @typescript-eslint/eslint-plugin@5.33.0
 
 > npm install --save-dev prettier eslint typescript-eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import
+
+**storybookの設定**
+
+> npx sb init
+
+> npm install --save-dev @storybook/addon-postcss tsconfig-paths-webpack-plugin @babel/plugin-proposal-class-properties @babel/plugin-proposal-private-methods @babel/plugin-proposal-private-property-in-object tsconfig-paths-webpack-plugin @mdx-js/react
+
+> npm run storybook
+
+**react hook Formの導入**
+
+> npm install react-hook-form  
+
+**SWRの導入**
+
+> npm install swr
+
+**react content Loaderの導入**
+
+> npm install react-content-loader  
+> npm install --save-dev @types/react-content-loader
+
+**Material Iconの導入**
+
+> npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
+
+**npm ci**とは？
+
+package-lock.jsonから依存関係をインストールする
+
+**jsxで""を使う場合**
+> Reactのjsx内にアプストロフィを含む文字列を記述しようとしたらESLintのエラー(eslintreact/no-unescaped-entities)に引っかかった。
+
+[参考](https://qiita.com/Yuya2218/items/efbe2badb45d439012a4)
