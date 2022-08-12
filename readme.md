@@ -167,3 +167,34 @@ export const fetcher = async (
 ): Promise<any> => {
   const res = await fetch(resource, init)
 ```
+
+**keyof typeof の使い道**
+[keyof typeofの使い方 [TypeScript]](https://qiita.com/ota-yuki/items/545999a5b5f8e6151244)
+[keyof typeofでオブジェクトからキーだけを抜き出して型を生成する](https://zenn.dev/harryduck/articles/9d09b1c133f9cd)
+
+```ts
+const sampleObject = {
+        aaa: 'AAA',
+        bbb: 'BBB',
+        ccc: 'CCC,'
+    };
+
+    type samplekeyType = keyof typeof sampleObject;
+
+    const receivedStringValue = () => {
+        const num = 1;
+        if(num === 1){
+            return 'aaa';
+        }else if(num === 0){
+            return 'bbb';
+        }else{
+            return 'ccc';
+        }
+    };
+    
+    // この場合は key "aaa" | "hhh" | "ccc" の型になる
+    // const key: keyof typeof sampleObject = 'ddd';
+    const key: keyof typeof sampleObject = receivedStringValue();
+    const value = sampleObject[key];
+    console.log(value);
+```
