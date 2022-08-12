@@ -152,3 +152,18 @@ package-lock.jsonから依存関係をインストールする
 > Reactのjsx内にアプストロフィを含む文字列を記述しようとしたらESLintのエラー(eslintreact/no-unescaped-entities)に引っかかった。
 
 [参考](https://qiita.com/Yuya2218/items/efbe2badb45d439012a4)
+
+#### chapter6
+
+**特定の行のルール(any無視)を無効化**
+
+[ESLintのコメントでのルール制御](https://qiita.com/nju33/items/2d0cfea4fffbfdbff87a)
+
+```ts
+export const fetcher = async (
+  resource: RequestInfo,
+  init?: RequestInit,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+): Promise<any> => {
+  const res = await fetch(resource, init)
+```
