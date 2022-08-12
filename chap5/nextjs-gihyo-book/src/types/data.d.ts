@@ -11,7 +11,7 @@ export type User = {
 };
 
 export type ApiContext = {
-    apiRouotUrl: string,
+    apiRootUrl: string,
 };
 
 export type Product = {
