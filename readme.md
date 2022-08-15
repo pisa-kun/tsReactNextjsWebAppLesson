@@ -200,3 +200,16 @@ const sampleObject = {
     const value = sampleObject[key];
     console.log(value);
 ```
+
+**storybookについて**
+
+- reactかnextをインストールしたプロジェクトでないと動作しない
+  - npm sb init 時に自動でプロジェクト判定して必要なモジュールをインストールする
+```
+ storybook init - the simplest way to add a Storybook to your project. 
+
+ • Detecting project type. ✓
+ • Adding Storybook support to your "React" app
+ ```
+
+ 
