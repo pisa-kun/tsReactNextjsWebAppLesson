@@ -1,9 +1,10 @@
 module.exports = {
-  
+  "typescript" : { reactDocgen: false }, // add
   "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    '../src/**/*.stories.mdx',
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
+  staticDirs: ["../public"],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
