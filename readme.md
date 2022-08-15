@@ -76,7 +76,7 @@ or
 > npm install --save styled-components  
 > npm install --save-dev @types/styled-components  
 
-**stroybookError**
+**stroybookError**  
 [参考](https://dev.classmethod.jp/articles/tried-to-add-storybook-to-nextjs-project/)
 
 ```.storybook/main.js
