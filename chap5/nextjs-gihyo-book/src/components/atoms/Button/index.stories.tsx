@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Button from './index';
 
